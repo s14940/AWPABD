@@ -1,1 +1,2 @@
 # AWPABD
+Celem tej aplikacji jest wspomaganie pracy administratora baz danych w codziennej pracy. Aplikacja umożliwia nam tworzenie własne listy serwerów z którymi chcemy pracować a w obrębie każdego z serwerów mamy możliwość definiowania odpowiednich zapytań sprecyzowanych pod dane wymagania. Każde zapytanie oraz funkcjonalność przypisana będzie do serwera.  Aplikacja także będzie mierzyła opóźnienia miedzy serwerami a także monitorowała ich działanie oraz alarmowała przy określeniu odpowiednich progów. 
