@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<script type="application/javascript" src="../js/validationCommon.js"></script>
+<script type="application/javascript" src="../js/validationUserForm.js"></script>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-form</title>
+   
+</head>
+<body>
+    <header>
+        <h1>AWPADB</h1>
+        <img src="../images/logo.png" alt="AWPADB">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Serwery</a></li>
+            <li><a href="" class="active">Użytkownicy</a></li>
+            <li><a href="">Procedury</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy user</h2>
+        <form class="form select" novalidate onsubmit="return validateForm();">
+            <div>
+                <label for="login">LOGIN:<sup>*</sup></labe>
+                <input type="text" name="login" id="login" placeholder="2-100 znaków" />
+                <span id="errorLogin" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="password">PASSWORD:<sup>*</sup></label>
+                <input type="text" name="password" id="password" placeholder="2-100 znaków" />
+                <span id="errorPassword" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="telefon">TELEFON:<sup>*</sup></label>
+                <input type="tel" name="telefon" id="telefon" placeholder="9 znaków" />
+                <span id="errorTelefon" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="email">EMAIL:<sup>*</sup></label>
+                <input type="email" name="email" id="email" placeholder="2-100 znaków"/>
+                <span id="errorEmail" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="firstName">IMIĘ:<sup>*</sup></label>
+                <input type="text" name="firstName" id="firstName" placeholder="2-100 znaków"/>
+                <span id="errorFirstName" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="lastName">NAZWISKO:<sup>*</sup></label>
+                <input type="text" name="lastName" id="lastName" placeholder="2-100 znaków" />
+                <span id="errorLastName" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="query">GRUPA:</label>
+
+                <select name="id" id="id">
+                <option value="default">Wybierz...</option>
+                <option value="serwer01">MSSQL</option>
+                </select>
+                <span id="errorQuery" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="query">ROLA:</label>
+
+                <select name="id" id="id">
+                <option value="default">Wybierz...</option>
+                <option value="serwer01">ADMIN</option>
+                </select>
+                <span id="errorQuery" class="errors-text"></span>
+
+            </div>
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
+                <input  class="form-button-submit" type="submit" value="Dodaj" />
+                <a href="" class="form-button-cancel">Anuluj</a>    
+            </div> 
+
+        </form>
+    </main>
+    <footer>
+        Michał Wróblerwski, s14940...
+    </footer>
+</body>
+</html>

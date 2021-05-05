@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<script type="application/javascript" src="../js/validationCommon.js"></script>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servers-form</title>
+    
+</head>
+<body>
+    <header>
+        <h1>AWPADB</h1>
+        <img src="../images/logo.png" alt="AWPADB">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="" class="active">Serwery</a></li>
+            <li><a href="">Użytkownicy</a></li>
+            <li><a href="">Procedury</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy serwer</h2>
+        <form class="form select">
+            <div>
+                <label for="name">NAZWA:<sup>*</sup></labe>
+                <input type="text" name="name" id="name" placeholder="2-100 znaków" />
+                <span id="errorName" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="DNS">DNS:<sup>*</sup></label>
+                <input type="text" name="DNS" id="dns" placeholder="2-100 znaków" />
+                <span id="errorDNS" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="IP">IP:<sup>*</sup></label>
+                <input type="text" name="IP" id="ip" placeholder="2-20 znaków" />
+                <span id="errorIP" class="errors-text"></span>
+                
+            </div>
+            <div>
+                <label for="port">PORT:<sup>*</sup></label>
+                <input type="text" name="PORT" id="port" placeholder="2-5 znaków" />
+                <span id="errorPort" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="kalster">KLASTER:<sup>*</sup></label>
+                <input type="text" name="KLASTER" id="klaster" placeholder="0 - 1" />
+                <span id="errorKlaster" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="opis">OPIS:<sup>*</sup></label>
+                <input type="text" name="OPIS" id="opis" placeholder="2-250 znaków" />
+                <span id="errorOpis" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="aktywny">AKTYWNY:<sup>*</sup></label>
+                <input type="text" name="AKTYWNY" id="aktywny" placeholder="0 - 1" />
+                <span id="errorAktywny" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="historia">HISTORIA:<sup>*</sup></label>
+                <input type="text" name="HISTORIA" id="historia" placeholder="2-250 znaków" />
+                <span id="errorHistoria" class="errors-text"></span>
+
+            </div>
+            <div>
+                <label for="query">GRUPA:</label>
+
+                <select name="id" id="id">
+                <option value="default">Wybierz...</option>
+                <option value="serwer01">PRD</option>
+                </select>
+                <span id="errorQuery" class="errors-text"></span>
+
+            </div>
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
+                <input  class="form-button-submit" type="submit" value="Dodaj" />
+                <a href="" class="form-button-cancel">Anuluj</a>    
+            </div> 
+
+        </form>
+    </main>
+    <footer>
+        Michał Wróblerwski, s14940...
+    </footer>
+</body>
+</html>

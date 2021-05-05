@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<script type="application/javascript" src="../js/validationCommon.js"></script>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-form</title>
+</head>
+<body>
+    <header>
+        <h1>AWPADB</h1>
+        <img src="../images/logo.png" alt="AWPADB">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Serwery</a></li>
+            <li><a href="" >Użytkownicy</a></li>
+            <li><a href="" class="active">Procedury</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowa procedura</h2>
+        <form class="form select">
+            <div>
+                <label for="login">NAZWA:<sup>*</sup></labe>
+                <input type="text" name="login" id="login" placeholder="2-100 znaków" />
+                <span id="errorLogin" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="body">BODY:<sup>*</sup></label>
+                <input type="text" name="body" id="body" placeholder="nvarchar(max)" />
+                <span id="errorBody" class="errors-text"></span>
+            </div>
+            <div>
+                <label for="opis">OPIS:<sup>*</sup></label>
+                <input type="text" name="opis" id="opis" placeholder="2-250 znaków" />
+                <span id="errorOpis" class="errors-text"></span>
+            </div>
+            
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
+                <input  class="form-button-submit" type="submit" value="Dodaj" />
+                <a href="" class="form-button-cancel">Anuluj</a>    
+            </div> 
+
+        </form>
+    </main>
+    <footer>
+        Michał Wróblerwski, s14940...
+    </footer>
+</body>
+</html>
