@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../css/style.css" />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWPADB</title>
+    <title>DATABASES</title>
 </head>
 <body>
     <header>
@@ -22,9 +22,10 @@
         </ul>
     </nav>
     <main>
-        <h2>Strona główna</h2>
+        <h2>DATABASES</h2>
         
         <form class="form select">
+            
             <div>
                 <label for="server">Serwer:</label>
 
@@ -33,24 +34,36 @@
                 <option value="serwer01">Serwer01</option>
                 </select>
             </div>
-            <div>
-                <label for="query">Zapytanie:</label>
-
-                <select name="id" id="id">
-                <option value="default">Wybierz...</option>
-                <option value="serwer01">sp_who2_mod</option>
-                </select>
-
-            </div>
             <div class="form-buttons">
                 <input  class="form-button-submit" type="submit" value="Wykonaj" />
-                <input  class="form-button-submit" type="submit" value="Informacje" />
-                <input  class="form-button-submit" type="submit" value="Statystyki" />
-                <input  class="form-button-submit" type="submit" value="Latency history" />
             </div> 
-        
         </form>
-        <p>Wynik sp_who2 z losowego serwra - jak brak to sp_who2 z serwera aplikacji</p>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>NAZWA</th>
+                        <th>OPIS</th>
+                        <th>WŁĄCZONA</th>
+                        <th>OWNER</th>
+                        <th>COLLATION</th>
+                        <th>TYPE</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TEST</td>
+                        <td>jakis opis</td>
+                        <td>1</td>
+                        <td>Jan Kowalski</td>
+                        <td>XYZ</td>
+                        <td>offline</td>
+                        <td>jakis status</td>
+                    </tr>
+                </tbody>
+            </table>
+      
+        <p>LISTA BAZ DANYCH Z DANEGO SERWERA Z UWAGAMI</p>
     </main>
     <footer>
         Michał Wróblerwski, s14940...

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servers-form</title>
+    <title>user-form</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
@@ -17,52 +17,52 @@
     <nav>
         <ul>
             <li><a href="">Strona główna</a></li>
-            <li><a href="" class="active">Serwery</a></li>
-            <li><a href="">Użytkownicy</a></li>
+            <li><a href="">Serwery</a></li>
+            <li><a href="" class="active">Użytkownicy</a></li>
             <li><a href="">Procedury</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Nowy serwer</h2>
+        <h2>Nowy user</h2>
         <form class="form select">
             <div>
-                <label for="name">NAZWA:<sup>*</sup></labe  l>
-                <input type="text" name="name" id="name" />
+                <label for="login">LOGIN:<sup>*</sup></labe  l>
+                <input type="text" name="login" id="login" />
             </div>
             <div>
-                <label for="DNS">DNS:<sup>*</sup></label>
-                <input type="text" name="DNS" id="dns" />
+                <label for="password">PASSWORD:<sup>*</sup></label>
+                <input type="text" name="password" id="password" />
             </div>
             <div>
-                <label for="IP">IP:<sup>*</sup></label>
-                <input type="text" name="IP" id="ip" />
+                <label for="telefon">TELEFON:<sup>*</sup></label>
+                <input type="tel" name="telefon" id="telefon" />
             </div>
             <div>
-                <label for="port">PORT:<sup>*</sup></label>
-                <input type="text" name="PORT" id="port" />
+                <label for="email">EMAIL:<sup>*</sup></label>
+                <input type="email" name="email" id="email" />
             </div>
             <div>
-                <label for="kalster">KLASTER:<sup>*</sup></label>
-                <input type="text" name="KLASTER" id="klaster" />
+                <label for="firstName">IMIĘ:<sup>*</sup></label>
+                <input type="text" name="firstName" id="firstName" />
             </div>
             <div>
-                <label for="opis">OPIS:<sup>*</sup></label>
-                <input type="text" name="OPIS" id="opis" />
-            </div>
-            <div>
-                <label for="aktywny">AKTYWNY:<sup>*</sup></label>
-                <input type="text" name="AKTYWNY" id="aktywny" />
-            </div>
-            <div>
-                <label for="historia">HISTORIA:<sup>*</sup></label>
-                <input type="text" name="HISTORIA" id="historia" />
+                <label for="lastName">NAZWISKO:<sup>*</sup></label>
+                <input type="text" name="lastName" id="lastName" />
             </div>
             <div>
                 <label for="query">GRUPA:</label>
 
                 <select name="id" id="id">
                 <option value="default">Wybierz...</option>
-                <option value="serwer01">PRD</option>
+                <option value="serwer01">MSSAL</option>
+                </select>
+            </div>
+            <div>
+                <label for="query">ROLA:</label>
+
+                <select name="id" id="id">
+                <option value="default">Wybierz...</option>
+                <option value="serwer01">ADMIN</option>
                 </select>
             </div>
             <div class="form-buttons">

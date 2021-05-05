@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-form</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>AWPADB</h1>
+        <img src="../images/logo.png" alt="AWPADB">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Serwery</a></li>
+            <li><a href="" class="active">Użytkownicy</a></li>
+            <li><a href="">Procedury</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy user</h2>
+        <form class="form select">
+            <div>
+                <label for="login">LOGIN:</labe  l>
+                <input type="text" name="login" id="login"disabled  />
+            </div>
+            <div>
+                <label for="password">PASSWORD:</label>
+                <input type="text" name="password" id="password" disabled />
+            </div>
+            <div>
+                <label for="telefon">TELEFON:</label>
+                <input type="tel" name="telefon" id="telefon" disabled />
+            </div>
+            <div>
+                <label for="email">EMAIL:</label>
+                <input type="email" name="email" id="email" disabled />
+            </div>
+            <div>
+                <label for="firstName">IMIĘ:</label>
+                <input type="text" name="firstName" id="firstName" disabled />
+            </div>
+            <div>
+                <label for="lastName">NAZWISKO:</label>
+                <input type="text" name="lastName" id="lastName" disabled />
+            </div>
+            <div>
+                <label for="query">GRUPA:</label>
+
+                <select name="id" id="id" disabled>
+                <option value="default">Wybierz...</option>
+                <option value="serwer01">MSSQL</option>
+                </select>
+            </div>
+            <div>
+                <label for="query">ROLA:</label>
+
+                <select name="id" id="id" disabled>
+                <option value="default">Wybierz...</option>
+                <option value="serwer01">ADMIN</option>
+                </select>
+            </div>
+            <div class="form-buttons">
+                <input class="form-button-submit" type="submit" value="Edytuj"/>
+                <a class="form-button-cancel" href="">Powrót</a>     
+            </div> 
+
+        </form>
+    </main>
+    <footer>
+        Michał Wróblerwski, s14940...
+    </footer>
+</body>
+</html>
