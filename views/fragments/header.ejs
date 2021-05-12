@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWPADB</title>
+</head>
+<body>
+    <header>
+        <h1>AWPADB</h1>
+        <img src="images/logo.png" alt="AWPADB">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/" class="<%= navLocation == 'main' ? 'active' : ''%>">Strona główna</a></li>
+            <li><a href="/servers" class="<%= navLocation == 'server' ? 'active' : ''%>">Serwery</a></li>
+            <li><a href="/user" class="<%= navLocation == 'user' ? 'active' : ''%>">Użytkownicy</a></li>
+            <li><a href="/procedure" class="<%= navLocation == 'procedure' ? 'active' : ''%>">Procedury</a></li>
+        </ul>
+    </nav>
